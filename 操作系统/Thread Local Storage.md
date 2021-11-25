@@ -14,14 +14,14 @@
 ```c++
 int a = 1; // 全局变量
 void print_a() {
-	cout<<a<<endl;
+	  cout<<a<<endl;
 }
 void run() {
-	++a;
+	  ++a;
     print_a();
 }
 void main() {
-	thread t1(run);
+	  thread t1(run);
     t1.join();
     thread t2(run);
     t2.join();

@@ -10,7 +10,7 @@
 
 HTTP**S** 在 HTTP 与 TCP 层之间加入了 `SSL/TLS` 协议。
 
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/J0g14CUwaZfXG1113Sjm0iaOXfoOv0tlUzdWm2toFZmoutgdMlZichgjsFggJOHXg6Z09ckSyeTPpkdywfljh3uw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图片](D:\Download\桌面\知识体系\图片\应用层 - HTTPS\HTTP与HTTPS.jpg)
 
 <center>HTTP 与 HTTPS
 
@@ -44,7 +44,7 @@ HTTP**S** 在 HTTP 与 TCP 层之间加入了 `SSL/TLS` 协议。
 - 优点：运算速度快；
 - 缺点：无法安全地将密钥传输给通信方。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/7fffa4b8-b36d-471f-ad0c-a88ee763bb76.png" width="600"/> </div><br>
+![](D:\Download\桌面\知识体系\图片\对称密钥加密.png)
 
 ### 非对称密钥加密
 
@@ -57,7 +57,7 @@ HTTP**S** 在 HTTP 与 TCP 层之间加入了 `SSL/TLS` 协议。
 - 优点：可以更安全地将公开密钥传输给通信发送方；
 - 缺点：运算速度慢。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/39ccb299-ee99-4dd1-b8b4-2f9ec9495cb4.png" width="600"/> </div><br>
+![](D:\Download\桌面\知识体系\图片\非对称密钥加密.jpg)
 
 ### 混合加密
 
@@ -83,8 +83,7 @@ HTTPS 采用的是**对称加密**和**非对称加密**结合的「混合加密
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_jpg/J0g14CUwaZfXG1113Sjm0iaOXfoOv0tlUicIliaBcr2XAXpMdeibLG4MMticpkX0e6xZHbXeiavMu7faJcL2TdVj0Udw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)校验完整性
 
-客户端在发送明文之前会通过摘要算法算出明文的「指纹」，发送的时候把「指纹 + 明文」一同
-加密成密文后，发送给服务器，服务器解密后，用相同的摘要算法算出发送过来的明文，通过比较客户端携带的「指纹」和当前算出的「指纹」做比较，若「指纹」相同，说明数据是完整的。
+客户端在发送明文之前会通过摘要算法算出明文的「指纹」，发送的时候把「指纹 + 明文」一同加密成密文后，发送给服务器，服务器解密后，用相同的摘要算法算出发送过来的明文，通过比较客户端携带的「指纹」和当前算出的「指纹」做比较，若「指纹」相同，说明数据是完整的。
 
 ## 数字证书
 
